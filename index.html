@@ -540,10 +540,10 @@
         </section>
         <!-- contacto -->
         <section id="contacto" aria-labelledby="titulo-contacto">
-            <div class="container">
-                <header>
+            <div class="container py-5">
+                <header class="mb-4"><!-- medium bold -->
                     <h2 id="titulo-contacto">Contacto</h2>
-                    <p>
+                    <p class="text-muted">
                         ¿Quieres saber más de esta serie? Contáctanos en nuestras redes sociales.
                     </p>
                 </header>
@@ -552,32 +552,34 @@
                         <legend>
                             Escríbenos
                         </legend>
-                        <p>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </p>
-                        <p>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </p>
-                        <p>
-                            <label for="tema">Tema:</label>
-                            <br>
-                            <select id="tema" name="tema">
-                                <option value="capitulos">Capítulos</option>
-                                <option value="personajessec">Personajes secundarios</option>
-                                <option value="animadoresdest">Animadores destacados</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </p>
-                        <p>
-                            <label for="mensaje">Mensaje</label> <br>
-                            <textarea id="mensaje" name="mensaje" rows="10" cols="30" required></textarea>
-                        </p>
-                        <p>
-                            <button type="submit">Enviar</button>
-                            <button type="reset">Limpiar</button>
-                        </p>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="tema" class="form-label">Tema:</label>
+                                <br>
+                                <select id="tema" name="tema" class="form-select">
+                                    <option value="capitulos">Capítulos</option>
+                                    <option value="personajessec">Personajes secundarios</option>
+                                    <option value="animadoresdest">Animadores destacados</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje</label> <br>
+                                <textarea id="mensaje" name="mensaje" rows="10" cols="30" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-success me-2">Enviar</button>
+                                <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
             </div>
