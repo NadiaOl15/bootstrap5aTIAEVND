@@ -6,11 +6,14 @@
     <meta name="description" content="Explora los personajes de Digital Circus, sus historias y características únicas.">
     <title>Digital Circus Personajes</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <a href="#contenido" aria-label="Ir al contenido principal">Saltar al contenido</a>
-        <div class="container">
+        <div class="py-3 px-5">
+            <a href="#contenido" aria-label="Ir al contenido principal" class="btn btn-primary me-2 shadow-sm">Saltar al contenido</a>
+        </div>
+            <div class="container">
             <h1>Personajes de Digital Circus</h1>
             <p>Explora los personajes de Digital Circus, sus historias y características únicas.</p>
         </div>
@@ -22,11 +25,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#personajes">Personajes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#voces">Voces</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="btn btn-primary me-2 shadow-sm" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="btn btn-danger me-2 shadow-sm" href="#personajes">Personajes</a></li>
+                        <li class="nav-item"><a class="btn btn-warning me-2 shadow-sm" href="#voces">Voces</a></li>
+                        <li class="nav-item"><a class="btn btn-danger me-2 shadow-sm" href="#galeria">Galería</a></li>
+                        <li class="nav-item"><a class="btn btn-primary me-2 shadow-sm" href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,11 +48,11 @@
                     <figcaption>Imagen de Caine de Digital Circus</figcaption>
                 </figure>
                 <p>
-                    <a href="#resumen" class="btn btn-primary me-2">Resumen</a>
-                    <a href="#personajes" class="btn btn-outline-secondary me-2">Personajes</a>
-                    <a href="#voces" class="btn btn-secondary me-2">Voces</a>
-                    <a href="#galeria">Galería</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#resumen" class="btn btn-danger me-2">Resumen</a>
+                    <a href="#personajes" class="btn btn-primary me-2">Personajes</a>
+                    <a href="#voces" class="btn btn-warning me-2">Voces</a>
+                    <a href="#galeria" class="btn btn-primary me-2">Galería</a>
+                    <a href="#contacto" class="btn btn-danger">Contacto</a>
                 </p>
             </div>
         </section>
@@ -126,7 +129,7 @@
                 <div class="row g-3" aria-labelledby="titulo-castactual"> <!-- gutter=separacion -->
                     <h2>Cast actual</h2>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition"> <!-- h-100 para que todas las tarjetas tengan la misma altura -->
                             <div class="card-body">
                                 <figure>
                                     <img src="img/pompom.jpg" class="img-fluid rounded" alt="Imagen de Pomni">
@@ -137,7 +140,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/JaxVS.jpg" class="img-fluid rounded" alt="Imagen de Jax">
@@ -149,7 +152,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/rags.jpg" class="img-fluid rounded" alt="Imagen de Ragatha">
@@ -161,7 +164,7 @@
                         </div>        
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Zoobs.jpg" class="img-fluid rounded" alt="Imagen de Zooble">
@@ -174,7 +177,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Gangle.jpg" class="img-fluid rounded" alt="Imagen de Gangle">
@@ -186,7 +189,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Kinger.jpg" class="img-fluid rounded" alt="Imagen de Kinger">
@@ -198,10 +201,11 @@
                         </div>
                     </article>
                 </div>
+                <br>
                 <div class="row g-3" aria-labelledby="titulo-former">
                     <h2>Cast anterior</h2>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Scratch.png" class="img-fluid rounded" alt="Imagen de Scratch">
@@ -212,7 +216,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Ribbit.png" class="img-fluid rounded" alt="Imagen de Ribbit">
@@ -223,7 +227,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/kaufie.jpg" class="img-fluid rounded" alt="Imagen de Kaufmo">
@@ -234,7 +238,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Queenie.png" class="img-fluid rounded" alt="Imagen de Queenie">
@@ -245,10 +249,11 @@
                         </div>
                     </article>
                 </div>
+                <br>
                 <div class="row g-3" aria-labelledby="titulo-IA">
                     <h2>Cast IA</h2>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/caine.jpg" class="img-fluid rounded" alt="Imagen de Caine">
@@ -262,7 +267,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/bubble.jpg" class="img-fluid rounded" alt="Imagen de Bubble">
@@ -273,7 +278,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100"> 
+                        <div class="card h-100 shadow-sm transition"> 
                             <div class="card-body">
                                 <figure>
                                     <img src="img/sun.jpg" class="img-fluid rounded" alt="Imagen de El Sol">
@@ -284,7 +289,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/moon.jpg" class="img-fluid rounded" alt="Imagen de La Luna">
@@ -295,10 +300,11 @@
                         </div>
                     </article>
                 </div>
+                <br>
                 <div class="row g-3" aria-labelledby="titulo-NPC">
                     <h2>Cast NPCs</h2>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/gummigoo.jpg" class="img-fluid rounded" alt="Imagen de Gummigoo">
@@ -309,7 +315,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/abel.jpg" class="img-fluid rounded" alt="Imagen de Abel">
@@ -320,7 +326,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/disap.jpg" class="img-fluid rounded" alt="Imagen de Disappearing Guy">
@@ -331,7 +337,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/ming.jpg" class="img-fluid rounded" alt="Imagen de Ming">
@@ -357,7 +363,7 @@
                 <div class="row g-3" aria-labelledby="titulo-castactual">
                     <h2>Personajes principales</h2>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/lizzie.jpg" class="img-fluid rounded" alt="Imagen de Lizzie Freeman">
@@ -368,7 +374,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Alex.jpg" class="img-fluid rounded" alt="Imagen de Alex">
@@ -379,7 +385,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Kovox.jpg" class="img-fluid rounded" alt="Imagen de Michael Kovach">
@@ -390,7 +396,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Amanda.jpg" class="img-fluid rounded" alt="Imagen de Amanda Hufford">
@@ -401,7 +407,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Marissa.jpg" class="img-fluid rounded" alt="Imagen de Marissa Lenti">
@@ -412,7 +418,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Ashley.jpg" class="img-fluid rounded" alt="Imagen de Ashley Nichols">
@@ -423,7 +429,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Sean.jpg" class="img-fluid rounded" alt="Imagen de Sean Chiplock">
@@ -434,7 +440,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Gooseworx.jpg" class="img-fluid rounded" alt="Imagen de Gooseworx">
@@ -445,7 +451,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/Skye.jpg" class="img-fluid rounded" alt="Imagen de Skye Redden">
@@ -456,7 +462,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/ausssie.jpg" class="img-fluid rounded" alt="Imagen de Gummigoo's VA">
@@ -467,7 +473,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <figure>
                                     <img src="img/abelVA.jpg" class="img-fluid rounded" alt="Imagen de Abel's VA">
@@ -489,15 +495,15 @@
                 </header>
                 <div class="row g-3">
                     <figure class="col-12 col-sm-6 col-md-4"> <!-- col-12 para telefono col-sm-6 para tablet col-md-4 para PC -->
-                        <img src="img/ep7.jpg" class="img-fluid rounded" alt="Episodio 7">
+                        <img src="img/ep7.jpg" class="img-fluid rounded shadow-sm transition" alt="Episodio 7">
                         <figcaption class="mt-2 text-center">Episodio 7</figcaption>
                     </figure>
                     <figure class="col-12 col-sm-6 col-md-4">
-                        <img src="img/softball.jpg" class="img-fluid rounded" alt="Episodio 5">
+                        <img src="img/softball.jpg" class="img-fluid rounded shadow-sm transition" alt="Episodio 5">
                         <figcaption class="mt-2 text-center">Episodio 5</figcaption>
                     </figure>
                     <figure class="col-12 col-sm-6 col-md-4">
-                        <img src="img/antesdelatragedia.jpg" class="img-fluid rounded" alt="Episodio 6">
+                        <img src="img/antesdelatragedia.jpg" class="img-fluid rounded shadow-sm transition" alt="Episodio 6">
                         <figcaption class="mt-2 text-center">Episodio 6</figcaption>
                     </figure>
                 </div>
@@ -512,7 +518,7 @@
                     </h2>
                 </header>
                 <!-- details y summary-->
-                <details class="border rounded p-3 mb-3">
+                <details class="border rounded p-3 mb-3 shadow-sm">
                     <summary class="fw-semibold"><!-- fw= font weight -->
                         ¿Porqué tardan tanto en salir los capítulos?
                     </summary>
@@ -520,7 +526,7 @@
                         La animación de calidad toma tiempo.
                     </p>
                 </details>
-                <details class="border rounded p-3 mb-3">
+                <details class="border rounded p-3 mb-3 shadow-sm">
                     <summary class="fw-semibold">
                         ¿Cuándo sale el siguiente capítulo?
                     </summary>
@@ -528,7 +534,7 @@
                         El caítulo 8 sale el 20 de Marzo del 2026.
                     </p>
                 </details>
-                <details class="border rounded p-3 mb-3">
+                <details class="border rounded p-3 mb-3 shadow-sm">
                     <summary class="fw-semibold">
                         ¿Cuántos capítulos tendrá la serie?
                     </summary>
